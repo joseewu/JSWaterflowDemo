@@ -1,0 +1,1037 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6BEFAA0A65BC4395E9622C /* Pods_JSWaterFallCollectionViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BC7FC8C57AA03350CC07C6 /* Pods_JSWaterFallCollectionViewDemo.framework */; };
+		67F0908AB576648C28E638B1 /* Pods_JSWaterFallCollectionViewDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2279F0B8BA9F33FB016D0B /* Pods_JSWaterFallCollectionViewDemoUITests.framework */; };
+		6EB0AC1FBABFBA74A720AC00 /* Pods_JSWaterFallCollectionViewDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1180F6F722C37731A0F20F2B /* Pods_JSWaterFallCollectionViewDemoTests.framework */; };
+		EB2CC4112203D35F00EE5C00 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CC4102203D35F00EE5C00 /* RootContract.swift */; };
+		EB2CC4132203D45E00EE5C00 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CC4122203D45E00EE5C00 /* RootPresenter.swift */; };
+		EB2CC4152203D48500EE5C00 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CC4142203D48500EE5C00 /* RootRouter.swift */; };
+		EB2CC41A2203D86E00EE5C00 /* RootModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CC4192203D86E00EE5C00 /* RootModuleFactory.swift */; };
+		EB2CC41C2203D90F00EE5C00 /* JSTracksModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CC41B2203D90F00EE5C00 /* JSTracksModuleFactory.swift */; };
+		EB2CC42F2204019C00EE5C00 /* JSTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2CC42E2204019C00EE5C00 /* JSTracksViewController.xib */; };
+		EB3BB13621EC40BA00DDB8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BB13521EC40BA00DDB8A3 /* AppDelegate.swift */; };
+		EB3BB13B21EC40BA00DDB8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BB13921EC40BA00DDB8A3 /* Main.storyboard */; };
+		EB3BB13E21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB3BB13C21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodeld */; };
+		EB3BB14021EC40BC00DDB8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3BB13F21EC40BC00DDB8A3 /* Assets.xcassets */; };
+		EB3BB14321EC40BC00DDB8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BB14121EC40BC00DDB8A3 /* LaunchScreen.storyboard */; };
+		EB3BB14E21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BB14D21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.swift */; };
+		EB3BB15921EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BB15821EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.swift */; };
+		EB3F99E922027EAF00D7F34A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99E822027EAF00D7F34A /* UserModel.swift */; };
+		EB3F99EF22029C8A00D7F34A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99EE22029C8900D7F34A /* ViewModelType.swift */; };
+		EB3F99F122029CD000D7F34A /* TracksHomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99F022029CD000D7F34A /* TracksHomeContract.swift */; };
+		EB3F99F42202A7AF00D7F34A /* JSTracksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99F32202A7AF00D7F34A /* JSTracksInteractor.swift */; };
+		EB3F99F62202A7C700D7F34A /* JSTracksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99F52202A7C700D7F34A /* JSTracksPresenter.swift */; };
+		EB3F99F82202A7DD00D7F34A /* JSTracksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F99F72202A7DD00D7F34A /* JSTracksRouter.swift */; };
+		EB4A52D2220C6CE000948E12 /* JSPlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A52D1220C6CE000948E12 /* JSPlaybackPresenter.swift */; };
+		EB4A52D4220C6D0600948E12 /* JSPlaybackContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A52D3220C6D0600948E12 /* JSPlaybackContract.swift */; };
+		EB4A52D6220C70A100948E12 /* JSPlaybackInterctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A52D5220C70A100948E12 /* JSPlaybackInterctor.swift */; };
+		EB4A52D8220C725F00948E12 /* JSPlayerbackRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A52D7220C725E00948E12 /* JSPlayerbackRouting.swift */; };
+		EB4A52DA220C729F00948E12 /* JSPlaybackModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A52D9220C729F00948E12 /* JSPlaybackModuleFactory.swift */; };
+		EB73F5F521F1BF7300F91092 /* JSTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BB13721EC40BA00DDB8A3 /* JSTracksViewController.swift */; };
+		EB73F5F921F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F5F721F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.swift */; };
+		EB73F5FA21F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73F5F821F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.xib */; };
+		EB73F5FD21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F5FB21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.swift */; };
+		EB73F5FE21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73F5FC21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.xib */; };
+		EB8F682F220C2DB80008410D /* JSPlaybackPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F682D220C2DB80008410D /* JSPlaybackPageController.swift */; };
+		EB8F6830220C2DB80008410D /* JSPlaybackPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8F682E220C2DB80008410D /* JSPlaybackPageController.xib */; };
+		EB8F6833220C2F720008410D /* JSPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F6831220C2F720008410D /* JSPhotoCollectionViewCell.swift */; };
+		EB8F6834220C2F720008410D /* JSPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8F6832220C2F720008410D /* JSPhotoCollectionViewCell.xib */; };
+		EBA894D32201A51700BDB670 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA894D22201A51700BDB670 /* HomeService.swift */; };
+		EBA894D82201A7A300BDB670 /* RxAlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA894D72201A7A300BDB670 /* RxAlamofireExtension.swift */; };
+		EBA894DA2201A81200BDB670 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA894D92201A81200BDB670 /* UITableViewExtension.swift */; };
+		EBC4E60B2201AA16002E4A06 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4E60A2201AA16002E4A06 /* TrackModel.swift */; };
+		EBEB860D22155B8900D5F24E /* JSUserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB860B22155B8900D5F24E /* JSUserPageViewController.swift */; };
+		EBEB860E22155B8900D5F24E /* JSUserPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEB860C22155B8900D5F24E /* JSUserPageViewController.xib */; };
+		EBEB861022155BAB00D5F24E /* JSUserPageModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB860F22155BAB00D5F24E /* JSUserPageModuleFactory.swift */; };
+		EBEB861322155C2200D5F24E /* JSUserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB861222155C2200D5F24E /* JSUserContract.swift */; };
+		EBEB861522155C8000D5F24E /* JSUserPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB861422155C8000D5F24E /* JSUserPagePresenter.swift */; };
+		EBEB861722155CE300D5F24E /* JSUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB861622155CE300D5F24E /* JSUserInteractor.swift */; };
+		EBEB861922155D3600D5F24E /* JSUserPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB861822155D3600D5F24E /* JSUserPageRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB3BB14A21EC40BC00DDB8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3BB12A21EC40BA00DDB8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3BB13121EC40BA00DDB8A3;
+			remoteInfo = JSWaterFallCollectionViewDemo;
+		};
+		EB3BB15521EC40BC00DDB8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3BB12A21EC40BA00DDB8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3BB13121EC40BA00DDB8A3;
+			remoteInfo = JSWaterFallCollectionViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1180F6F722C37731A0F20F2B /* Pods_JSWaterFallCollectionViewDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSWaterFallCollectionViewDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4631DCD0DE39CDC43E5F9A /* Pods-JSWaterFallCollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemo.release.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemo/Pods-JSWaterFallCollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		33BC7FC8C57AA03350CC07C6 /* Pods_JSWaterFallCollectionViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSWaterFallCollectionViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A922EA8E18D2C18CB7B5C7C /* Pods-JSWaterFallCollectionViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemoUITests/Pods-JSWaterFallCollectionViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67F09B969A352D4ADB1185B5 /* Pods-JSWaterFallCollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemo/Pods-JSWaterFallCollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6E2279F0B8BA9F33FB016D0B /* Pods_JSWaterFallCollectionViewDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSWaterFallCollectionViewDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDA5F67F667CB6E647BC257 /* Pods-JSWaterFallCollectionViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemoTests.release.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemoTests/Pods-JSWaterFallCollectionViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B89BF83EE9351D4207C73485 /* Pods-JSWaterFallCollectionViewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemoUITests/Pods-JSWaterFallCollectionViewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D56FD6D79C98E3C8E0889A92 /* Pods-JSWaterFallCollectionViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFallCollectionViewDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-JSWaterFallCollectionViewDemoTests/Pods-JSWaterFallCollectionViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2CC4102203D35F00EE5C00 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		EB2CC4122203D45E00EE5C00 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		EB2CC4142203D48500EE5C00 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		EB2CC4192203D86E00EE5C00 /* RootModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModuleFactory.swift; sourceTree = "<group>"; };
+		EB2CC41B2203D90F00EE5C00 /* JSTracksModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTracksModuleFactory.swift; sourceTree = "<group>"; };
+		EB2CC42E2204019C00EE5C00 /* JSTracksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSTracksViewController.xib; sourceTree = "<group>"; };
+		EB3BB13221EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSWaterFallCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BB13521EC40BA00DDB8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3BB13721EC40BA00DDB8A3 /* JSTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTracksViewController.swift; sourceTree = "<group>"; };
+		EB3BB13A21EC40BA00DDB8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB3BB13D21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JSWaterFallCollectionViewDemo.xcdatamodel; sourceTree = "<group>"; };
+		EB3BB13F21EC40BC00DDB8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3BB14221EC40BC00DDB8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB3BB14421EC40BC00DDB8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3BB14921EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSWaterFallCollectionViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BB14D21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSWaterFallCollectionViewDemoTests.swift; sourceTree = "<group>"; };
+		EB3BB14F21EC40BC00DDB8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3BB15421EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSWaterFallCollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BB15821EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSWaterFallCollectionViewDemoUITests.swift; sourceTree = "<group>"; };
+		EB3BB15A21EC40BC00DDB8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3F99E822027EAF00D7F34A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EB3F99EE22029C8900D7F34A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		EB3F99F022029CD000D7F34A /* TracksHomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksHomeContract.swift; sourceTree = "<group>"; };
+		EB3F99F32202A7AF00D7F34A /* JSTracksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTracksInteractor.swift; sourceTree = "<group>"; };
+		EB3F99F52202A7C700D7F34A /* JSTracksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTracksPresenter.swift; sourceTree = "<group>"; };
+		EB3F99F72202A7DD00D7F34A /* JSTracksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTracksRouter.swift; sourceTree = "<group>"; };
+		EB4A52D1220C6CE000948E12 /* JSPlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlaybackPresenter.swift; sourceTree = "<group>"; };
+		EB4A52D3220C6D0600948E12 /* JSPlaybackContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlaybackContract.swift; sourceTree = "<group>"; };
+		EB4A52D5220C70A100948E12 /* JSPlaybackInterctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlaybackInterctor.swift; sourceTree = "<group>"; };
+		EB4A52D7220C725E00948E12 /* JSPlayerbackRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlayerbackRouting.swift; sourceTree = "<group>"; };
+		EB4A52D9220C729F00948E12 /* JSPlaybackModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlaybackModuleFactory.swift; sourceTree = "<group>"; };
+		EB73F5F721F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPhotoLeftCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB73F5F821F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSPhotoLeftCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB73F5FB21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPhotoRightCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB73F5FC21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSPhotoRightCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB8F682D220C2DB80008410D /* JSPlaybackPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPlaybackPageController.swift; sourceTree = "<group>"; };
+		EB8F682E220C2DB80008410D /* JSPlaybackPageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSPlaybackPageController.xib; sourceTree = "<group>"; };
+		EB8F6831220C2F720008410D /* JSPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB8F6832220C2F720008410D /* JSPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBA894D22201A51700BDB670 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		EBA894D72201A7A300BDB670 /* RxAlamofireExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAlamofireExtension.swift; sourceTree = "<group>"; };
+		EBA894D92201A81200BDB670 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		EBC4E60A2201AA16002E4A06 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		EBEB860B22155B8900D5F24E /* JSUserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserPageViewController.swift; sourceTree = "<group>"; };
+		EBEB860C22155B8900D5F24E /* JSUserPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSUserPageViewController.xib; sourceTree = "<group>"; };
+		EBEB860F22155BAB00D5F24E /* JSUserPageModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserPageModuleFactory.swift; sourceTree = "<group>"; };
+		EBEB861222155C2200D5F24E /* JSUserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserContract.swift; sourceTree = "<group>"; };
+		EBEB861422155C8000D5F24E /* JSUserPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserPagePresenter.swift; sourceTree = "<group>"; };
+		EBEB861622155CE300D5F24E /* JSUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserInteractor.swift; sourceTree = "<group>"; };
+		EBEB861822155D3600D5F24E /* JSUserPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSUserPageRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB3BB12F21EC40BA00DDB8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6BEFAA0A65BC4395E9622C /* Pods_JSWaterFallCollectionViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB14621EC40BC00DDB8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB0AC1FBABFBA74A720AC00 /* Pods_JSWaterFallCollectionViewDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB15121EC40BC00DDB8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0908AB576648C28E638B1 /* Pods_JSWaterFallCollectionViewDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA33DBEC1E4B383D3A41A090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33BC7FC8C57AA03350CC07C6 /* Pods_JSWaterFallCollectionViewDemo.framework */,
+				1180F6F722C37731A0F20F2B /* Pods_JSWaterFallCollectionViewDemoTests.framework */,
+				6E2279F0B8BA9F33FB016D0B /* Pods_JSWaterFallCollectionViewDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDB97CB4B60AA2926D0AB542 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67F09B969A352D4ADB1185B5 /* Pods-JSWaterFallCollectionViewDemo.debug.xcconfig */,
+				2B4631DCD0DE39CDC43E5F9A /* Pods-JSWaterFallCollectionViewDemo.release.xcconfig */,
+				D56FD6D79C98E3C8E0889A92 /* Pods-JSWaterFallCollectionViewDemoTests.debug.xcconfig */,
+				9DDA5F67F667CB6E647BC257 /* Pods-JSWaterFallCollectionViewDemoTests.release.xcconfig */,
+				5A922EA8E18D2C18CB7B5C7C /* Pods-JSWaterFallCollectionViewDemoUITests.debug.xcconfig */,
+				B89BF83EE9351D4207C73485 /* Pods-JSWaterFallCollectionViewDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB2CC4162203D49600EE5C00 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CC4102203D35F00EE5C00 /* RootContract.swift */,
+				EB2CC4122203D45E00EE5C00 /* RootPresenter.swift */,
+				EB2CC4142203D48500EE5C00 /* RootRouter.swift */,
+				EB2CC4192203D86E00EE5C00 /* RootModuleFactory.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EB3BB12921EC40BA00DDB8A3 = {
+			isa = PBXGroup;
+			children = (
+				EB3BB13421EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */,
+				EB3BB14C21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests */,
+				EB3BB15721EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests */,
+				EB3BB13321EC40BA00DDB8A3 /* Products */,
+				DDB97CB4B60AA2926D0AB542 /* Pods */,
+				CA33DBEC1E4B383D3A41A090 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3BB13321EC40BA00DDB8A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BB13221EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.app */,
+				EB3BB14921EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.xctest */,
+				EB3BB15421EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3BB13421EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BB13521EC40BA00DDB8A3 /* AppDelegate.swift */,
+				EBA894D22201A51700BDB670 /* HomeService.swift */,
+				EB3F99EE22029C8900D7F34A /* ViewModelType.swift */,
+				EB3F99ED22029B8F00D7F34A /* Model */,
+				EB2CC4162203D49600EE5C00 /* Root */,
+				EBA894D02201879800BDB670 /* HomePage */,
+				EB4A52DB220C72C200948E12 /* PlaybackPage */,
+				EBEB861122155C0300D5F24E /* UserPage */,
+				EBA894DB2201A81A00BDB670 /* Extension */,
+				EB3BB13F21EC40BC00DDB8A3 /* Assets.xcassets */,
+				EB3BB14121EC40BC00DDB8A3 /* LaunchScreen.storyboard */,
+				EB3BB14421EC40BC00DDB8A3 /* Info.plist */,
+				EB3BB13C21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodeld */,
+			);
+			path = JSWaterFallCollectionViewDemo;
+			sourceTree = "<group>";
+		};
+		EB3BB14C21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BB14D21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.swift */,
+				EB3BB14F21EC40BC00DDB8A3 /* Info.plist */,
+			);
+			path = JSWaterFallCollectionViewDemoTests;
+			sourceTree = "<group>";
+		};
+		EB3BB15721EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BB15821EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.swift */,
+				EB3BB15A21EC40BC00DDB8A3 /* Info.plist */,
+			);
+			path = JSWaterFallCollectionViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		EB3F99ED22029B8F00D7F34A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBC4E60A2201AA16002E4A06 /* TrackModel.swift */,
+				EB3F99E822027EAF00D7F34A /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB3F99F22202A5CE00D7F34A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB8F6831220C2F720008410D /* JSPhotoCollectionViewCell.swift */,
+				EB8F6832220C2F720008410D /* JSPhotoCollectionViewCell.xib */,
+				EB73F5FB21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.swift */,
+				EB73F5FC21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.xib */,
+				EB73F5F721F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.swift */,
+				EB73F5F821F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB4A52DB220C72C200948E12 /* PlaybackPage */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A52D9220C729F00948E12 /* JSPlaybackModuleFactory.swift */,
+				EB4A52D3220C6D0600948E12 /* JSPlaybackContract.swift */,
+				EB4A52D1220C6CE000948E12 /* JSPlaybackPresenter.swift */,
+				EB4A52D5220C70A100948E12 /* JSPlaybackInterctor.swift */,
+				EB4A52D7220C725E00948E12 /* JSPlayerbackRouting.swift */,
+				EB8F682D220C2DB80008410D /* JSPlaybackPageController.swift */,
+				EB8F682E220C2DB80008410D /* JSPlaybackPageController.xib */,
+			);
+			path = PlaybackPage;
+			sourceTree = "<group>";
+		};
+		EBA894D02201879800BDB670 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F99F022029CD000D7F34A /* TracksHomeContract.swift */,
+				EB2CC42E2204019C00EE5C00 /* JSTracksViewController.xib */,
+				EB2CC41B2203D90F00EE5C00 /* JSTracksModuleFactory.swift */,
+				EB3BB13721EC40BA00DDB8A3 /* JSTracksViewController.swift */,
+				EB3F99F32202A7AF00D7F34A /* JSTracksInteractor.swift */,
+				EB3F99F52202A7C700D7F34A /* JSTracksPresenter.swift */,
+				EB3F99F72202A7DD00D7F34A /* JSTracksRouter.swift */,
+				EB3F99F22202A5CE00D7F34A /* Views */,
+				EB3BB13921EC40BA00DDB8A3 /* Main.storyboard */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		EBA894DB2201A81A00BDB670 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBA894D72201A7A300BDB670 /* RxAlamofireExtension.swift */,
+				EBA894D92201A81200BDB670 /* UITableViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBEB861122155C0300D5F24E /* UserPage */ = {
+			isa = PBXGroup;
+			children = (
+				EBEB861222155C2200D5F24E /* JSUserContract.swift */,
+				EBEB860F22155BAB00D5F24E /* JSUserPageModuleFactory.swift */,
+				EBEB861422155C8000D5F24E /* JSUserPagePresenter.swift */,
+				EBEB861822155D3600D5F24E /* JSUserPageRouter.swift */,
+				EBEB861622155CE300D5F24E /* JSUserInteractor.swift */,
+				EBEB860B22155B8900D5F24E /* JSUserPageViewController.swift */,
+				EBEB860C22155B8900D5F24E /* JSUserPageViewController.xib */,
+			);
+			path = UserPage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3BB13121EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BB15D21EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemo" */;
+			buildPhases = (
+				3E1F82C231760917701F93F0 /* [CP] Check Pods Manifest.lock */,
+				EB3BB12E21EC40BA00DDB8A3 /* Sources */,
+				EB3BB12F21EC40BA00DDB8A3 /* Frameworks */,
+				EB3BB13021EC40BA00DDB8A3 /* Resources */,
+				D91C060CEE324168F1688AC1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSWaterFallCollectionViewDemo;
+			productName = JSWaterFallCollectionViewDemo;
+			productReference = EB3BB13221EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB3BB14821EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BB16021EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemoTests" */;
+			buildPhases = (
+				37F487F9805FCA7A26D2F33D /* [CP] Check Pods Manifest.lock */,
+				EB3BB14521EC40BC00DDB8A3 /* Sources */,
+				EB3BB14621EC40BC00DDB8A3 /* Frameworks */,
+				EB3BB14721EC40BC00DDB8A3 /* Resources */,
+				2E823FD8AFEBECC159958CF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3BB14B21EC40BC00DDB8A3 /* PBXTargetDependency */,
+			);
+			name = JSWaterFallCollectionViewDemoTests;
+			productName = JSWaterFallCollectionViewDemoTests;
+			productReference = EB3BB14921EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB3BB15321EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BB16321EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemoUITests" */;
+			buildPhases = (
+				62B18818031B995AB4FBFF77 /* [CP] Check Pods Manifest.lock */,
+				EB3BB15021EC40BC00DDB8A3 /* Sources */,
+				EB3BB15121EC40BC00DDB8A3 /* Frameworks */,
+				EB3BB15221EC40BC00DDB8A3 /* Resources */,
+				6A82CA4FC430CA885D02100E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3BB15621EC40BC00DDB8A3 /* PBXTargetDependency */,
+			);
+			name = JSWaterFallCollectionViewDemoUITests;
+			productName = JSWaterFallCollectionViewDemoUITests;
+			productReference = EB3BB15421EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3BB12A21EC40BA00DDB8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.js;
+				TargetAttributes = {
+					EB3BB13121EC40BA00DDB8A3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB3BB14821EC40BC00DDB8A3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EB3BB13121EC40BA00DDB8A3;
+					};
+					EB3BB15321EC40BC00DDB8A3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EB3BB13121EC40BA00DDB8A3;
+					};
+				};
+			};
+			buildConfigurationList = EB3BB12D21EC40BA00DDB8A3 /* Build configuration list for PBXProject "JSWaterFallCollectionViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3BB12921EC40BA00DDB8A3;
+			productRefGroup = EB3BB13321EC40BA00DDB8A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3BB13121EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */,
+				EB3BB14821EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests */,
+				EB3BB15321EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB3BB13021EC40BA00DDB8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB73F5FE21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.xib in Resources */,
+				EB2CC42F2204019C00EE5C00 /* JSTracksViewController.xib in Resources */,
+				EB3BB14321EC40BC00DDB8A3 /* LaunchScreen.storyboard in Resources */,
+				EBEB860E22155B8900D5F24E /* JSUserPageViewController.xib in Resources */,
+				EB73F5FA21F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.xib in Resources */,
+				EB8F6834220C2F720008410D /* JSPhotoCollectionViewCell.xib in Resources */,
+				EB3BB14021EC40BC00DDB8A3 /* Assets.xcassets in Resources */,
+				EB3BB13B21EC40BA00DDB8A3 /* Main.storyboard in Resources */,
+				EB8F6830220C2DB80008410D /* JSPlaybackPageController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB14721EC40BC00DDB8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB15221EC40BC00DDB8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E823FD8AFEBECC159958CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemoTests/Pods-JSWaterFallCollectionViewDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemoTests/Pods-JSWaterFallCollectionViewDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F487F9805FCA7A26D2F33D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSWaterFallCollectionViewDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1F82C231760917701F93F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSWaterFallCollectionViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62B18818031B995AB4FBFF77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSWaterFallCollectionViewDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A82CA4FC430CA885D02100E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemoUITests/Pods-JSWaterFallCollectionViewDemoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemoUITests/Pods-JSWaterFallCollectionViewDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91C060CEE324168F1688AC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemo/Pods-JSWaterFallCollectionViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSWaterFallCollectionViewDemo/Pods-JSWaterFallCollectionViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3BB12E21EC40BA00DDB8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2CC4112203D35F00EE5C00 /* RootContract.swift in Sources */,
+				EB3F99F122029CD000D7F34A /* TracksHomeContract.swift in Sources */,
+				EB2CC4152203D48500EE5C00 /* RootRouter.swift in Sources */,
+				EBA894D32201A51700BDB670 /* HomeService.swift in Sources */,
+				EB2CC41A2203D86E00EE5C00 /* RootModuleFactory.swift in Sources */,
+				EB4A52DA220C729F00948E12 /* JSPlaybackModuleFactory.swift in Sources */,
+				EB4A52D6220C70A100948E12 /* JSPlaybackInterctor.swift in Sources */,
+				EB73F5F921F1C6B900F91092 /* JSPhotoLeftCollectionViewCell.swift in Sources */,
+				EBEB861722155CE300D5F24E /* JSUserInteractor.swift in Sources */,
+				EBC4E60B2201AA16002E4A06 /* TrackModel.swift in Sources */,
+				EBEB861922155D3600D5F24E /* JSUserPageRouter.swift in Sources */,
+				EB8F6833220C2F720008410D /* JSPhotoCollectionViewCell.swift in Sources */,
+				EB3BB13621EC40BA00DDB8A3 /* AppDelegate.swift in Sources */,
+				EBEB861022155BAB00D5F24E /* JSUserPageModuleFactory.swift in Sources */,
+				EB3F99F82202A7DD00D7F34A /* JSTracksRouter.swift in Sources */,
+				EB8F682F220C2DB80008410D /* JSPlaybackPageController.swift in Sources */,
+				EBEB860D22155B8900D5F24E /* JSUserPageViewController.swift in Sources */,
+				EBA894D82201A7A300BDB670 /* RxAlamofireExtension.swift in Sources */,
+				EB4A52D8220C725F00948E12 /* JSPlayerbackRouting.swift in Sources */,
+				EB73F5FD21F1C6E900F91092 /* JSPhotoRightCollectionViewCell.swift in Sources */,
+				EBA894DA2201A81200BDB670 /* UITableViewExtension.swift in Sources */,
+				EB3F99F42202A7AF00D7F34A /* JSTracksInteractor.swift in Sources */,
+				EB4A52D2220C6CE000948E12 /* JSPlaybackPresenter.swift in Sources */,
+				EB2CC4132203D45E00EE5C00 /* RootPresenter.swift in Sources */,
+				EB73F5F521F1BF7300F91092 /* JSTracksViewController.swift in Sources */,
+				EB2CC41C2203D90F00EE5C00 /* JSTracksModuleFactory.swift in Sources */,
+				EB3BB13E21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodeld in Sources */,
+				EB4A52D4220C6D0600948E12 /* JSPlaybackContract.swift in Sources */,
+				EB3F99E922027EAF00D7F34A /* UserModel.swift in Sources */,
+				EBEB861522155C8000D5F24E /* JSUserPagePresenter.swift in Sources */,
+				EBEB861322155C2200D5F24E /* JSUserContract.swift in Sources */,
+				EB3F99F62202A7C700D7F34A /* JSTracksPresenter.swift in Sources */,
+				EB3F99EF22029C8A00D7F34A /* ViewModelType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB14521EC40BC00DDB8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3BB14E21EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BB15021EC40BC00DDB8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3BB15921EC40BC00DDB8A3 /* JSWaterFallCollectionViewDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB3BB14B21EC40BC00DDB8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3BB13121EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */;
+			targetProxy = EB3BB14A21EC40BC00DDB8A3 /* PBXContainerItemProxy */;
+		};
+		EB3BB15621EC40BC00DDB8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3BB13121EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo */;
+			targetProxy = EB3BB15521EC40BC00DDB8A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB3BB13921EC40BA00DDB8A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3BB13A21EC40BA00DDB8A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB3BB14121EC40BC00DDB8A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3BB14221EC40BC00DDB8A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB3BB15B21EC40BC00DDB8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB3BB15C21EC40BC00DDB8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3BB15E21EC40BC00DDB8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F09B969A352D4ADB1185B5 /* Pods-JSWaterFallCollectionViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB3BB15F21EC40BC00DDB8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4631DCD0DE39CDC43E5F9A /* Pods-JSWaterFallCollectionViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB3BB16121EC40BC00DDB8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56FD6D79C98E3C8E0889A92 /* Pods-JSWaterFallCollectionViewDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSWaterFallCollectionViewDemo.app/JSWaterFallCollectionViewDemo";
+			};
+			name = Debug;
+		};
+		EB3BB16221EC40BC00DDB8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDA5F67F667CB6E647BC257 /* Pods-JSWaterFallCollectionViewDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSWaterFallCollectionViewDemo.app/JSWaterFallCollectionViewDemo";
+			};
+			name = Release;
+		};
+		EB3BB16421EC40BC00DDB8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A922EA8E18D2C18CB7B5C7C /* Pods-JSWaterFallCollectionViewDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JSWaterFallCollectionViewDemo;
+			};
+			name = Debug;
+		};
+		EB3BB16521EC40BC00DDB8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89BF83EE9351D4207C73485 /* Pods-JSWaterFallCollectionViewDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53PCKL938K;
+				INFOPLIST_FILE = JSWaterFallCollectionViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.JSWaterFallCollectionViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JSWaterFallCollectionViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB3BB12D21EC40BA00DDB8A3 /* Build configuration list for PBXProject "JSWaterFallCollectionViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BB15B21EC40BC00DDB8A3 /* Debug */,
+				EB3BB15C21EC40BC00DDB8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BB15D21EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BB15E21EC40BC00DDB8A3 /* Debug */,
+				EB3BB15F21EC40BC00DDB8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BB16021EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BB16121EC40BC00DDB8A3 /* Debug */,
+				EB3BB16221EC40BC00DDB8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BB16321EC40BC00DDB8A3 /* Build configuration list for PBXNativeTarget "JSWaterFallCollectionViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BB16421EC40BC00DDB8A3 /* Debug */,
+				EB3BB16521EC40BC00DDB8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB3BB13C21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB3BB13D21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodel */,
+			);
+			currentVersion = EB3BB13D21EC40BA00DDB8A3 /* JSWaterFallCollectionViewDemo.xcdatamodel */;
+			path = JSWaterFallCollectionViewDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB3BB12A21EC40BA00DDB8A3 /* Project object */;
+}
