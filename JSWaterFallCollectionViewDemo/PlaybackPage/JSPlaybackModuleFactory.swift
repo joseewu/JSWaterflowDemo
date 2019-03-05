@@ -18,6 +18,7 @@ class JSPlaybackModuleFactory {
         let interactor = JSPlaybackInterctor()
         let presenter = JSPlaybackPresenter(withInteractor: interactor, andRouter: router)
         let viewController = JSPlaybackPageController(presenter: presenter)
+        viewController.coverImg = trackModel.img
         presenter.track.onNext(trackModel)
         router.viewController = viewController
         

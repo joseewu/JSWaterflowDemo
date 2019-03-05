@@ -45,7 +45,7 @@ class JSTracksPresenter: TracksPresenting {
         }).disposed(by: disposeBag)
         self.interactor.tracks.asObservable().subscribe(onNext: { [weak self] (result) in
             self?.tracks = result.map({ (model) -> JSPhotoCollectionViewCellModel in
-
+                print(model.streamingUrl)
                 return JSPhotoCollectionViewCellModel.init(img: model.artwork ?? "", songUrl: model.streamingUrl ?? "")
 
             })

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSPlaybackPageController" customModule="JSWaterFallCollectionViewDemo" customModuleProvider="target">
             <connections>
+                <outlet property="ivCover" destination="7Kp-HL-HI3" id="KRh-6z-ktc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,6 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Kp-HL-HI3">
+                    <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szh-vs-Zfc">
                     <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                     <subviews>
@@ -45,8 +49,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Kp-HL-HI3" secondAttribute="trailing" id="47A-92-69j"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Szh-vs-Zfc" secondAttribute="bottom" id="4dh-nQ-Swh"/>
                 <constraint firstItem="Szh-vs-Zfc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8IJ-kv-nbG"/>
+                <constraint firstItem="Szh-vs-Zfc" firstAttribute="top" secondItem="7Kp-HL-HI3" secondAttribute="bottom" id="BkH-x2-Adl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="7Kp-HL-HI3" secondAttribute="top" id="D0G-eZ-ZE4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="7Kp-HL-HI3" secondAttribute="leading" id="kki-n0-uJY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Szh-vs-Zfc" secondAttribute="trailing" id="sfN-b2-9rj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -54,6 +62,6 @@
         </view>
     </objects>
     <resources>
-        <image name="music" width="96" height="96"/>
+        <image name="music" width="48" height="48"/>
     </resources>
 </document>
