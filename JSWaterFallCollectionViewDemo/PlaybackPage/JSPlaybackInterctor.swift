@@ -25,7 +25,7 @@ class JSPlaybackInterctor: PlaybackInteracting {
     func setUp() {
         songUrl.asObservable().flatMapLatest { (url) -> Observable<Data?> in
             guard let url = url else {return Observable.just(nil)}
-            let para = ["client_id":"70dd6cb1f3807a0d2032161d666b5f87"]
+            let para = ["client_id":""]
             let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
             guard let request = try? URLRequest(url: url, method: .get, headers: para) else {return Observable.empty()}
             let result = RxAlamofire.request(.get,url, parameters: para, encoding: URLEncoding.default, headers: nil).responseData().flatMapLatest({ (response, data) -> Observable<Data?> in

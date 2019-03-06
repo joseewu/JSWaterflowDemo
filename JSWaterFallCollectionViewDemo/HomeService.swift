@@ -34,7 +34,7 @@ enum HomeServiceEndpoint:String {
 }
 class HomeService:HomeServiceSpec {
     var mainURL: String = "https://api.soundcloud.com"
-    var clientID:String = "70dd6cb1f3807a0d2032161d666b5f87"
+    var clientID:String = ""
     init() {
 
     }
